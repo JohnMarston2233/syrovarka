@@ -1,0 +1,66 @@
+.hero {
+  padding: 20px 0;
+
+  &__content {
+    @include flex;
+
+    flex-wrap: wrap;
+    margin-right: -2px;
+    color: var(--light-color);
+  }
+
+  &__block {
+    @include bg-cover;
+    @include flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 2px;
+    padding: 15px 22px;
+    min-width: 293px;
+    min-height: 300px;
+
+    &--bg-1 {
+      @include image-set("../img/hero/hero-bg-1");
+    }
+
+    &--bg-2 {
+      @include image-set("../img/hero/hero-bg-2");
+    }
+
+    &--bg-3 {
+      @include image-set("../img/hero/hero-bg-3");
+    }
+
+    &--bigger {
+      flex-grow: 1;
+      padding: 38px 32px;
+      width: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 13px;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 83px;
+    max-width: 385px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__btn {
+    padding: 13px 15px;
+    min-width: 200px;
+  }
+
+  &__text {
+    margin-top: auto;
+    color: var(--primary-color);
+  }
+
+  &__subtitle {
+  }
+}

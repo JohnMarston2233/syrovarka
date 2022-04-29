@@ -1,0 +1,33 @@
+.social {
+  @include flex-v-center;
+
+  margin-right: 21px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    @include bg-cover;
+
+    display: block;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+  }
+
+  &__link--tg {
+    background-image: url("../img/header/sub/telegram.svg");
+  }
+
+  &__link--ws {
+    background-image: url("../img/header/sub/whatsup.svg");
+  }
+
+  &__link--ms {
+    background-image: url("../img/header/sub/messenger.svg");
+  }
+}

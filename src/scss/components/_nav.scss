@@ -1,0 +1,19 @@
+.nav {
+  &__list {
+    @include flex-v-center;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 14px;
+    color: var(--dark-color);
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+}
