@@ -33,10 +33,6 @@
         padding-left: 22px;
 
         &::before {
-          @include bg-cover;
-
-          content: "";
-          position: absolute;
           left: -4px;
           top: -3px;
           width: 22px;
@@ -74,7 +70,7 @@
     &__auth-icon {
       position: absolute;
       left: 0;
-      top: 0;
+      top: -2px;
       width: 18px;
       height: 18px;
     }
@@ -120,24 +116,35 @@
       font-size: 13px;
       line-height: 16px;
       color: var(--grey-color);
-      background-position: left center;
-      background-size: 28px;
-      background-repeat: no-repeat;
+
+      &::before {
+        left: 0;
+        top: 50%;
+        width: 28px;
+        height: 28px;
+        transform: translateY(-50%);
+      }
 
       &:not(:last-child) {
         margin-right: 18px;
       }
 
       &--box {
-        background-image: url("../img/header/sub/box.svg");
+        &::before {
+          background-image: url("../img/header/sub/box.svg");
+        }
       }
 
       &--card {
-        background-image: url("../img/header/sub/card.svg");
+        &::before {
+          background-image: url("../img/header/sub/card.svg");
+        }
       }
 
       &--defend {
-        background-image: url("../img/header/sub/defend.svg");
+        &::before {
+          background-image: url("../img/header/sub/defend.svg");
+        }
       }
 
       &--grow {
@@ -229,26 +236,27 @@
       &:not(:last-child) {
         margin-right: 20px;
       }
-    }
 
-    &__item-arrow {
-      padding-right: 21px;
-      cursor: pointer;
+      &--arrow {
+        padding-right: 21px;
+        cursor: pointer;
 
-      &:hover {
-        .header-nav__dropdown {
-          opacity: 1;
-          visibility: visible;
+        &::after {
+          right: 0;
+          top: 50%;
+          width: 16px;
+          height: 16px;
+          background-image: url("../img/header/nav/arrow-down.svg");
+          transform: translateY(-50%);
+        }
+
+        &:hover {
+          .header-nav__dropdown {
+            opacity: 1;
+            visibility: visible;
+          }
         }
       }
-    }
-
-    &__icon-arrow {
-      position: absolute;
-      right: 0;
-      top: -1px;
-      width: 18px;
-      height: 18px;
     }
 
     &__form {

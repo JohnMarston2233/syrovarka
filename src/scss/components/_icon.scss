@@ -5,4 +5,26 @@
     fill: currentcolor;
     object-fit: cover;
   }
+
+  &-bg {
+    position: relative;
+
+    &--before {
+      &::before {
+        @include bg-cover;
+
+        content: "";
+        position: absolute;
+      }
+    }
+
+    &--after {
+      &::after {
+        @include bg-cover;
+
+        content: "";
+        position: absolute;
+      }
+    }
+  }
 }
