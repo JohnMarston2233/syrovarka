@@ -1,0 +1,81 @@
+.aside {
+  width: 280px;
+
+  &__title {
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    padding-left: 42px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #4e2d2d;
+    background-color: #fbe8bb;
+
+    &::before {
+      left: 12px;
+      top: 50%;
+      width: 22px;
+      height: 22px;
+      transform: translateY(-50%);
+    }
+
+    &--cheese {
+      &::before {
+        background-image: url("../img/products/cheese.svg");
+      }
+    }
+
+    &--eq {
+      &::before {
+        background-image: url("../img/products/eq.svg");
+      }
+    }
+  }
+
+  &__list {
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    border-left: 1px solid #e6e6e6;
+    border-radius: 0 0 10px 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-color);
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    &--arrow {
+      &::after {
+        right: 16px;
+        top: 50%;
+        width: 17px;
+        height: 17px;
+        background-image: url("../img/products/arrow-right.svg");
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 14px;
+    padding-right: 33px;
+    line-height: 24px;
+    color: inherit;
+  }
+
+  &__dropdown {
+    right: 0;
+    top: 0;
+    padding-left: 10px;
+    transform: translateX(100%);
+  }
+}

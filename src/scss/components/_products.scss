@@ -1,0 +1,13 @@
+.products {
+  padding: 8px;
+
+  &__wrapper {
+    @include flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__content {
+  }
+}
