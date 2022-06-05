@@ -15,5 +15,9 @@
 
   &__link {
     color: inherit;
+
+    &--arrow {
+      padding-right: 21px;
+    }
   }
 }

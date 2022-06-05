@@ -2,7 +2,7 @@
   <div class="header-main">
     <div class="container header-main__wrapper">
        <div class="header-main__info">
-         <div class="header-main__info-content header-main__info-content--town">
+         <a class="header-main__info-content header-main__info-content--town" href="#">
            <span class="icon header-main__info-place">
              <svg>
                <use xlink:href="img/sprite.svg#location"></use>
@@ -14,7 +14,7 @@
               <use xlink:href="img/sprite.svg#arrow-down"></use>
             </svg>
           </span>
-         </div>
+         </a>
          <div class="icon-bg icon-bg--before header-main__info-content header-main__info-content--time">
             Пн-Пт 9:00 - 19:00
          </div>
@@ -24,8 +24,8 @@
            <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
            <li class="nav__item"><a href="#" class="nav__link">Преимущества</a></li>
            <li class="nav__item"><a href="#" class="nav__link">Акционные товары</a></li>
-           <li class="nav__item header-main__auth">
-             <a href="#" class="nav__link">
+           <li class="nav__item">
+             <a href="#" class="nav__link header-main__auth">
               <span class="icon header-main__auth-icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#account"></use>
@@ -83,20 +83,22 @@
       <nav class="nav" title="Навигация по товарам">
         <ul class="list-reset nav__list">
           <li class="dropdown-hover icon-bg icon-bg--after nav__item header-nav__item header-nav__item--arrow">
-            Рецепты
-            <div class="dropdown header-nav__dropdown">
-              <ul class="list-reset dropdown__list header-nav__dropdown-list">
-                <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Молодые сыры</a></li>
-                <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Полутвердые сыры</a></li>
-                <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Паста Филата</a></li>
-                <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Сывороточные сыры</a></li>
-                <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Сыры с плесенью</a></li>
-                <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Твердые сыры</a></li>
-                <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Творожные сыры</a></li>
-                <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Кисломолочные продукты</a></li>
-                <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Все рецепты</a></li>
-              </ul>
-            </div>
+            <a class="nav__link nav__link--arrow" href="#">
+              Рецепты
+              <div class="dropdown header-nav__dropdown">
+                <ul class="list-reset dropdown__list header-nav__dropdown-list">
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Молодые сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Полутвердые сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Паста Филата</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Сывороточные сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Сыры с плесенью</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Твердые сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Творожные сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Кисломолочные продукты</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Все рецепты</a></li>
+                </ul>
+              </div>
+            </a>
           </li>
           <li class="nav__item header-nav__item"><a class="nav__link" href="#">Доставка и оплата</a></li>
           <li class="nav__item header-nav__item"><a class="nav__link" href="#">Калькулятор Сыродела</a></li>

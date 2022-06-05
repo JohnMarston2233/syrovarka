@@ -106,8 +106,67 @@
         </li>
       </ul>
     </aside>
-    <div class="products__content">
-
+    <div class="tabs products__content" data-tabs="products-tabs">
+      <ul class="list-reset tabs__nav">
+        <li class="products__tabs-item tabs__nav-item"><button class="btn-reset products__tabs-btn tabs__nav-btn" type="button">Популярные товары</button></li>
+        <li class="products__tabs-item tabs__nav-item"><button class="btn-reset products__tabs-btn tabs__nav-btn" type="button">Акции</button></li>
+      </ul>
+      <div class="tabs__content">
+        <div class="tabs__panel">
+          <h2 class="products__title">Ингредиенты</h2>
+          <div class="products__cards-wrapper">
+            <div class="card">
+              <div class="card__img-wrapper">
+                <div class="card__img-dots"></div>
+                <picture>
+                  <source srcset="img/products/content/card-img-1.avif" type="image/avif">
+                  <source srcset="img/products/content/card-img-1.webp" type="image/webp">
+                  <img class="card__img card__img--main" loading="lazy" src="img/products/content/card-img-1.jpg" width="180" height="140" alt="Мезофильная закваска" data-card="img">
+                </picture>
+                <span class="card__img-hover" data-card="img-hover"></span>
+                <picture>
+                  <source srcset="img/products/content/card-img-2.avif" type="image/avif">
+                  <source srcset="img/products/content/card-img-2.webp" type="image/webp">
+                  <img class="card__img" loading="lazy" src="img/products/content/card-img-2.jpg" width="180" height="140" alt="Мезофильная закваска" data-card="img">
+                </picture>
+              </div>
+              <h2 class="subtitle card__title">Мезофильная закваска Danisco CHOOZIT MM</h2>
+              <div class="card__price-wrapper">
+                <div class="card__price">
+                  <span class="card__price-text">1300₽<span class="card__price-text card__price-text--smaller">/ 1 шт.</span></span>
+                  <span class="card__price-text card__price-text--old">1800₽</span>
+                </div>
+                <button class="btn-reset btn card__price-btn">Добавить</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img-wrapper">
+                <div class="card__img-dots"></div>
+                <picture>
+                  <source srcset="img/products/content/card-img-1.avif" type="image/avif">
+                  <source srcset="img/products/content/card-img-1.webp" type="image/webp">
+                  <img class="card__img card__img--main" loading="lazy" src="img/products/content/card-img-1.jpg" width="180" height="140" alt="Мезофильная закваска" data-card="img">
+                </picture>
+                <span class="card__img-hover" data-card="img-hover"></span>
+                <picture>
+                  <source srcset="img/products/content/card-img-2.avif" type="image/avif">
+                  <source srcset="img/products/content/card-img-2.webp" type="image/webp">
+                  <img class="card__img" loading="lazy" src="img/products/content/card-img-2.jpg" width="180" height="140" alt="Мезофильная закваска" data-card="img">
+                </picture>
+              </div>
+              <h2 class="subtitle card__title">Мезофильная закваска Danisco CHOOZIT MM</h2>
+              <div class="card__price-wrapper">
+                <div class="card__price">
+                  <span class="card__price-text">1300₽<span class="card__price-text card__price-text--smaller">/ 1 шт.</span></span>
+                  <span class="card__price-text card__price-text--old">1800₽</span>
+                </div>
+                <button class="btn-reset btn card__price-btn">Добавить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__panel"></div>
+      </div>
     </div>
   </div>
 </section>

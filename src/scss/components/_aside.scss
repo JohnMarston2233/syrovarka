@@ -21,13 +21,13 @@
 
     &--cheese {
       &::before {
-        background-image: url("../img/products/cheese.svg");
+        background-image: url("../img/products/aside/cheese.svg");
       }
     }
 
     &--eq {
       &::before {
-        background-image: url("../img/products/eq.svg");
+        background-image: url("../img/products/aside/eq.svg");
       }
     }
   }
@@ -58,7 +58,7 @@
         top: 50%;
         width: 17px;
         height: 17px;
-        background-image: url("../img/products/arrow-right.svg");
+        background-image: url("../img/products/aside/arrow-right.svg");
         transform: translateY(-50%);
       }
     }
