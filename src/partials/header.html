@@ -1,41 +1,42 @@
 <header class="header">
   <div class="header-main">
     <div class="container header-main__wrapper">
-       <div class="header-main__info">
-         <a class="header-main__info-content header-main__info-content--town" href="#">
-           <span class="icon header-main__info-place">
-             <svg>
-               <use xlink:href="img/sprite.svg#location"></use>
-             </svg>
-           </span>
-           Ваш город: Москва
-           <span class="icon header-main__info-arrow">
+      <div class="header-main__info">
+        <button class="btn-reset header-main__info-content header-main__info-content--town"
+          data-graph-path="modal-city" aria-label="Выбрать город, открыть модальное окно">
+          <span class="icon header-main__info-place">
+            <svg>
+              <use xlink:href="img/sprite.svg#location"></use>
+            </svg>
+          </span>
+          Ваш город: Москва
+          <span class="icon header-main__info-arrow">
             <svg>
               <use xlink:href="img/sprite.svg#arrow-down"></use>
             </svg>
           </span>
-         </a>
-         <div class="icon-bg icon-bg--before header-main__info-content header-main__info-content--time">
-            Пн-Пт 9:00 - 19:00
-         </div>
-       </div>
-       <nav class="nav" title="Главная навигация сайта">
-         <ul class="list-reset nav__list">
-           <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
-           <li class="nav__item"><a href="#" class="nav__link">Преимущества</a></li>
-           <li class="nav__item"><a href="#" class="nav__link">Акционные товары</a></li>
-           <li class="nav__item">
-             <a href="#" class="nav__link header-main__auth">
+        </button>
+        <div class="icon-bg icon-bg--before header-main__info-content header-main__info-content--time">
+          Пн-Пт 9:00 - 19:00
+        </div>
+      </div>
+      <nav class="nav" title="Главная навигация сайта">
+        <ul class="list-reset nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Преимущества</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Акционные товары</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link header-main__auth">
               <span class="icon header-main__auth-icon">
                 <svg>
                   <use xlink:href="img/sprite.svg#account"></use>
                 </svg>
               </span>
-               Войти в аккаунт
-              </a>
-            </li>
-         </ul>
-       </nav>
+              Войти в аккаунт
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
   <div class="header-sub">
@@ -47,7 +48,8 @@
         <div class="icon-bg icon-bg--before header-sub__info-card header-sub__info-card--box">
           Бесплатная доставка
         </div>
-        <div class="icon-bg icon-bg--before header-sub__info-card header-sub__info-card--grow header-sub__info-card--card">
+        <div
+          class="icon-bg icon-bg--before header-sub__info-card header-sub__info-card--grow header-sub__info-card--card">
           Скидка при оплате на сайта
         </div>
         <div class="icon-bg icon-bg--before header-sub__info-card header-sub__info-card--defend">
@@ -56,9 +58,12 @@
       </div>
       <div class="divider header-sub__contacts">
         <ul class="list-reset social" title="Наши контакты">
-          <li class="social__item"><a class="social__link social__link--tg" href="#" target="_blank" aria-label="Наша страничка в Телеграме"></a></li>
-          <li class="social__item"><a class="social__link social__link--ws" href="#" target="_blank" aria-label="Наша страничка в Вацапе"></a></li>
-          <li class="social__item"><a class="social__link social__link--ms" href="#" target="_blank" aria-label="Наша страничка в Мессенджере"></a></li>
+          <li class="social__item"><a class="social__link social__link--tg" href="#" target="_blank"
+              aria-label="Наша страничка в Телеграме"></a></li>
+          <li class="social__item"><a class="social__link social__link--ws" href="#" target="_blank"
+              aria-label="Наша страничка в Вацапе"></a></li>
+          <li class="social__item"><a class="social__link social__link--ms" href="#" target="_blank"
+              aria-label="Наша страничка в Мессенджере"></a></li>
         </ul>
         <div class="header-sub__phone">
           <a class="header-sub__phone-text" href="tel:+79164601960">+8 916 460-19-60</a>
@@ -87,15 +92,24 @@
               Рецепты
               <div class="dropdown header-nav__dropdown">
                 <ul class="list-reset dropdown__list header-nav__dropdown-list">
-                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Молодые сыры</a></li>
-                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Полутвердые сыры</a></li>
-                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Паста Филата</a></li>
-                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Сывороточные сыры</a></li>
-                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Сыры с плесенью</a></li>
-                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Твердые сыры</a></li>
-                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Творожные сыры</a></li>
-                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Кисломолочные продукты</a></li>
-                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Все рецепты</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link"
+                      href="#">Молодые сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link"
+                      href="#">Полутвердые сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link"
+                      href="#">Паста Филата</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link"
+                      href="#">Сывороточные сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link"
+                      href="#">Сыры с плесенью</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link"
+                      href="#">Твердые сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link"
+                      href="#">Творожные сыры</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link"
+                      href="#">Кисломолочные продукты</a></li>
+                  <li class="header-nav__dropdown-item"><a class="dropdown__link header-nav__dropdown-link" href="#">Все
+                      рецепты</a></li>
                 </ul>
               </div>
             </a>
@@ -109,7 +123,8 @@
       </nav>
       <form action="#" class="form header-nav__form">
         <label class="form__label">
-          <input class="input-reset form__input header-nav__form-input" type="text" name="Поиск" placeholder="Введите название товара или артикул">
+          <input class="input-reset form__input header-nav__form-input" type="text" name="Поиск"
+            placeholder="Введите название товара или артикул">
         </label>
         <button class="btn-reset form__btn header-nav__form-btn" aria-label="Поиск"></button>
       </form>
